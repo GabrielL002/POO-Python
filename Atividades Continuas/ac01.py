@@ -1,12 +1,3 @@
-# INSIRA ABAIXO OS NOMES DOS ALUNOS DO GRUPO (máximo 6 alunos)
-# ALUNO 1: Gabriel Lacerda Abilio
-# ALUNO 2: Gildasio Santos Xavier Filho
-# ALUNO 3: Igor dos Santos Ferreira
-# ALUNO 4: Diogo Fernando da Costa Mota
-# ALUNO 5: Victor Hugo Silva Nunes
-# ALUNO 6: Guilherme Lima dos Santos
-
-
 '''
 Implemente a função 'posicoes' que recebe como argumentos de entrada uma
 tupla e um item, e retorna uma lista contendo todos os índices em que o
