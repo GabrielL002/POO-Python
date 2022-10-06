@@ -81,4 +81,4 @@ class Historico:
         total = 0
         for pedido in self.pedidos:
             total += pedido.calcular_total()
-        return sum(total)
+        return total
