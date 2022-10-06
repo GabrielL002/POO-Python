@@ -1,6 +1,6 @@
 '''''
 -----------
-DESCRIÇÃO 
+DESCRIÇÃO
 -----------
 João confecciona placas por encomenda. Como o volume dos pedidos tem aumentado, ele precisa de uma 
 aplicação que controle o cadastro de seus clientes e os pedidos realizados.
@@ -18,6 +18,8 @@ João deseja ainda manter um histórico de todos os pedidos realizados, a fim de
 A partir do cenário descrito e do diagrama de classes apresentado, implemente em Python
 as classes solicitadas, aplicando os conceitos de programação orientada a objetos.
 '''
+
+
 class Endereco:
     def __init__(self, rua, numero, complemento, bairro, cidade, uf, cep):
         self.rua = rua
@@ -76,7 +78,7 @@ class Historico:
         self.pedidos.append(pedido)
 
     def calcular_faturamento(self):
-        total = []
+        total = 0
         for pedido in self.pedidos:
-            total.append(pedido.calcular_total())
+            total += pedido.calcular_total()
         return sum(total)
