@@ -6,7 +6,7 @@ João confecciona placas por encomenda. Como o volume dos pedidos tem aumentado,
 aplicação que controle o cadastro de seus clientes e os pedidos realizados.
 Quando ele recebe uma encomenda, João anota o nome do cliente, seu endereço completo e seu telefone.
 Para a encomenda, ele registra: a altura e largura da placa, a frase a ser escrita, a cor da placa
-("branca" ou "cinza"), a cor da frase ("azul", "vermelha", "amarela", "preta" ou "verde"). 
+("branca" ou "cinza"), a cor da frase ("azul", "vermelha", "amarela", "preta" ou "verde").
 Com base nessas informações ele calcula manualmente o valor da placa, utilizando as seguintes fórmulas:
 área = altura x largura
 custo do material = área x R$ 147,00
@@ -56,18 +56,6 @@ class Pedido:
         custoDesenho = letras * self.valor_fixo_letra
         total = custoMaterial + custoDesenho
         return total
-
-
-endereco = Endereco("Avenida Brasil", "123", "Apto. 58", "Centro", "São Paulo",
-                    "SP", "05577-023")
-
-cliente = Cliente("Paulo", "(11) 99999-4565", endereco)
-
-pedido1 = Pedido(cliente, 1.0, 3.0, "10 vezes sem juros", "cinza", "vermelha")
-
-pedido2 = Pedido(cliente, 0.5, 2, "Estamos Atendendo", "cinza", "vermelha")
-
-pedido3 = Pedido(cliente, 2, 5, "Promoção de inauguração", "branca", "preta")
 
 
 class Historico:
